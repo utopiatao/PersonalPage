@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tao Yang - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #fff;
+        }
+        .main-content h1, .main-content h2 {
+            color: #333;
+        }
+        .main-content p, .main-content li {
+            line-height: 1.6;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+        }
+        .contact-info, .skills, .projects, .work-experience, .education {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tao Yang</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Master's degree candidate with strong programming, analytical, and designing skills. A wide range of project experience in web development, machine learning, and mobile development. Strong knowledge of computer science and solid programming skills in Java, Python, Go, SQL, HTML/CSS, and JavaScript.</p>
+            </section>
+            <section id="education" class="education">
+                <h2>Education</h2>
+                <h3>University of Southern California, Los Angeles, CA</h3>
+                <p>Master of Science in Applied Data Science (September 2021 - May 2023) GPA: 3.91/4.0</p>
+                <h3>University of California, Los Angeles, Los Angeles, CA</h3>
+                <p>Bachelor of Science in Applied Mathematics (September 2019 - June 2021) GPA: 3.98/4.0</p>
+            </section>
+            <section id="work-experience" class="work-experience">
+                <h2>Work Experience</h2>
+                <h3>Siemens Ltd. Shanghai, China</h3>
+                <p>Team Assistant(Intern) (June 2019 - August 2019)</p>
+                <ul>
+                    <li>Developed a machine learning framework within Jupyter Notebook using Python to analyze customer behavior over recent years.</li>
+                    <li>Employed data visualization tools like Matplotlib, Seaborn, and Leather to effectively communicate findings to senior management.</li>
+                </ul>
+                <h3>Johnson Controls Shanghai, China</h3>
+                <p>Team Assistant(Intern) (June 2021 - August 2021)</p>
+                <ul>
+                    <li>Oversaw user information within an SQL database, maintaining organization and delivering comprehensive reports to leadership.</li>
+                    <li>Conducted in-depth analysis of North American marketing data utilizing machine learning libraries such as XGBoost, successfully extrapolating outcomes for the Chinese market.</li>
+                    <li>Conducted research on Johnson Controls Artificial Intelligence OpenBlue initiative.</li>
+                </ul>
+                <h3>Wanbang Autonation Technology CO, LTD Ningbo, China</h3>
+                <p>Software Developer (May 2023 - August 2023)</p>
+                <ul>
+                    <li>Developed and sustained the corporate website, employing React.JS to handle the front end and integrating Spring MVC for robust back-end functionality.</li>
+                    <li>Employed MySQL database to effectively manage visitor and prospective customer data.</li>
+                </ul>
+            </section>
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <h3>Online Order</h3>
+                <ul>
+                    <li>Implemented Rest API via Spring MVC including registration, menu searching, ordering, and checkout.</li>
+                    <li>Utilized Hibernate to access and operate the data storage (menu, restaurants, etc.).</li>
+                    <li>Provided both authentication and authorization via Spring security to protect the application from malicious attacks.</li>
+                    <li>Used the Spring framework core technologies to loosely decouple all the components in the application.</li>
+                    <li>Built client side with ReactJS and Ant Design to allow users to add items to the shopping cart and place orders.</li>
+                </ul>
+                <h3>Around: React-based Social Network</h3>
+                <ul>
+                    <li>Designed and implemented a social network web application with React JS.</li>
+                    <li>Implemented features for users to create and browse posts.</li>
+                    <li>Improved the authentication using token-based registration/login/logout flow with React Router v4 and server-side user authentication with JWT.</li>
+                    <li>Launched a scalable web service in Go to handle user posts and deployed it to Google Cloud (Google App Engine).</li>
+                    <li>Used Elasticsearch to provide search functions such that users can search recent posts and list personal posts.</li>
+                </ul>
+                <h3>Starlink: React JS based Starlink Trajectory Visualization</h3>
+                <ul>
+                    <li>Built location, altitude, and duration-based selectors to refine satellite search.</li>
+                    <li>Designed and developed a visualization dashboard using ReactJS and D3 to track satellites in real-time based on geo-location.</li>
+                    <li>Animated selected satellite paths on a world map using D3 to improve the user-friendliness.</li>
+                    <li>Deployed the dashboard to Amazon Web Service for demonstration.</li>
+                </ul>
+                <h3>Emulated Distributed File System (EDFS)</h3>
+                <ul>
+                    <li>Used Django to create a front end that supports users’ queries and Linux commands.</li>
+                    <li>Used python to achieve multiple APIs that support Linux commands and partite users' files into a few partitions and store the partition files into both Firebase and MySQL.</li>
+                    <li>NameNode will be automatically created as well.</li>
+                    <li>Manipulated a map-reduce function that collects the stored data users want to get in the future.</li>
+                    <li>Manipulated HDFS data loss backup plan by using copies of partition files.</li>
+                </ul>
+                <h3>Recommendation System Predict with Big Data</h3>
+                <ul>
+                    <li>Applied Data Processing and Feature Extraction to deal with the 3 GB different data sources.</li>
+                    <li>Used PySpark to parallel process the distributed data which improves the execution speed.</li>
+                    <li>Used XGBoost Model Training to train a regression model that is fit the data.</li>
+                    <li>Calculated the Root Mean Squared Error(RMSE) between the actual and predicted ratings to evaluate the model’s performance. The error was 0.9296 which is the top 10 program of the class.</li>
+                </ul>
+                <h3>TinNews: a Tinder-like News Recommendation Android App</h3>
+                <ul>
+                    <li>Designed the Instagram Flavor News app based on Google Component Architectural MVVM Pattern.</li>
+                    <li>Implemented the bottom bar & page navigation using the JetPack navigation component.</li>
+                    <li>Utilized Mindorks’s PlaceHolderView to support swipe gestures for liking/disliking the news.</li>
+                    <li>Built the Room Database with LiveData & ViewModel to support local cache and offline model.</li>
+                    <li>Integrated Retrofit and Rxjava to pull the latest news data from a RESTFUL endpoint (newsapi.org).</li>
+                </ul>
+                <h3>Image Classification (Machine Learning)</h3>
+                <ul>
+                    <li>Used Python OpenCV pre-processing images and label each class with digits.</li>
+                    <li>Used PyTorch and Keras packages for image learning to do cross-validation and model training process and test the model and built a better model based on the confusion matrix.</li>
+                    <li>Successfully built a model that can classify bird images with an accuracy rate higher than 85%.</li>
+                </ul>
+                <h3>SimZ</h3>
+                <ul>
+                    <li>Phone Agent that can talk to people using real time stream with Speech to Text, LLM and Text to Speech</li>
+                </ul>
+            </section>
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Java, Python, Go, MATLAB, SQL, and C++.</li>
+                    <li><strong>Web/App development:</strong> HTML, CSS, JavaScript, Flutter, Spring, React.</li>
+                    <li><strong>Database:</strong> MongoDB, Firebase, DynamoDB, MySQL, Elasticsearch.</li>
+                    <li><strong>Machine Learning/ Data Mining Tools:</strong> Spark, Hadoop HDFS, Keras, PyTorch, Tensorflow.</li>
+                </ul>
+            </section>
+            <section id="contact" class="contact-info">
+                <h2>Contact</h2>
+                <p><strong>Email:</strong> yangtaosimon@gmail.com</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/taoyang9803" target="_blank">www.linkedin.com/in/taoyang9803</a></p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tao Yang. All rights reserved.</p>
+    </footer>
+</body>
+</html>
